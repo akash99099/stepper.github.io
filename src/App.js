@@ -9,6 +9,7 @@ import {THEME} from "./helper/Color"
 import { Box } from "@mui/material";
 import { Provider } from "react-redux";
 import store from "./redux/store/store";
+import ViewEmployeData from "./pages/viewemployeedata/ViewEmployeData";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/employeeForm" element={<EmployeeForm />} />
+          <Route path="/viewemployeedata" element={<ViewEmployeData />} />
           <Route />
         </Routes>
       </BrowserRouter>

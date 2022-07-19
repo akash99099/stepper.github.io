@@ -44,6 +44,7 @@ const Home = () => {
     { heading: "Designation" },
     { heading: "Department" },
     { heading: "Active" },
+    { heading: "View" },
   ];
 
   const filterData = employedata.filter((item) => {
@@ -58,6 +59,10 @@ const Home = () => {
 
   const onClickDeleteBtn = (id) => {
     dispatch(deleteEmployeeData(id))
+  }
+
+  const onClickViewEmployeeData = (id) => {
+      navigate("/viewemployeedata",{state:{id:id}})
   }
 
   return (
@@ -118,6 +123,11 @@ const Home = () => {
                       <TableCell align="left">
                         <Button onClick={()=>onClickDeleteBtn(item.id)} color="danger" size="small" variant="contained">
                           DELETE
+                        </Button>
+                      </TableCell>
+                      <TableCell align="left">
+                        <Button onClick={()=>onClickViewEmployeeData(item.id)} color="app_primary" size="small" variant="contained">
+                          View
                         </Button>
                       </TableCell>
                     </TableRow>
