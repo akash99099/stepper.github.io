@@ -1,0 +1,25 @@
+* {
+  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+  
+}
+.text-header{
+  text-align: center !important;
+  /* font-size: 2rem; */
+  margin-top: 5px;
+}
+
+.button-stepper{
+  margin-right: 8px !important;
+}
+
+.chips{
+  display: "flex";
+}
+
+.chip{
+  margin: 2;
+  background-color: #fff;
+}
+
+
